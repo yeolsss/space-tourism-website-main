@@ -14,9 +14,12 @@
   position: relative;
 }
 .header-nav .header-nav__contents {
-  padding: 3.9rem 0 3.6rem 0;
   border-bottom: 3px solid rgba(0, 0, 0, 0);
   transition: border-bottom-color 0.5s ease-in;
+}
+.header-nav .header-nav__contents > a {
+  display: block;
+  padding: 3.9rem 0 3.6rem 0;
 }
 .header-nav .header-nav__contents:nth-child(2) {
   margin: 0 5rem 0 12.3rem;
@@ -27,8 +30,8 @@
   margin-right: 5rem;
 }
 .header-stick {
-  height: 1px;
-  width: 473px;
+  height: 0.1rem;
+  width: 47.3rem;
   opacity: 0.2515;
   background: #fff;
   position: absolute;
