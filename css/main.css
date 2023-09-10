@@ -1,10 +1,6 @@
 @import url('./base.css');
 @import url('./header.css');
 /*Contents*/
-body {
-  display: flex;
-  height: 100vh;
-}
 
 /*main section*/
 .main-section {
