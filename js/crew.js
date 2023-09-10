@@ -11,7 +11,7 @@ const CLASS_CREW_HOVER = 'hover-dot';
 
 //json.data에서 data가져오기
 const jsonData = async () => {
-  const { crew } = await (await fetch('../data.json')).json();
+  const { crew } = await (await fetch('data.json')).json();
   return crew;
 };
 

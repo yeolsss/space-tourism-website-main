@@ -19,7 +19,7 @@ const removeCurrentClass = () => {
 
 // data.json 데이터 받아오기
 const jsonData = async () => {
-  const { destinations } = await (await fetch('../data.json')).json();
+  const { destinations } = await (await fetch('data.json')).json();
   return destinations;
 };
 
