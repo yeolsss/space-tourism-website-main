@@ -48,8 +48,8 @@ planetTag.forEach((item, index) => {
       target.classList.add(CLASS_CURRENT_TEXT);
       const currentPlanet = target.innerText;
 
-      jsonData().then((item) => {
-        item.map((jsonItem) => {
+      jsonData().then((jsonItems) => {
+        jsonItems.map((jsonItem) => {
           if (jsonItem.name.toUpperCase() === currentPlanet) {
             planetTitle.innerText = jsonItem.name;
             planetBodyText.innerText = jsonItem.description;

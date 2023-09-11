@@ -49,8 +49,8 @@ crewNavDot.forEach((item) => {
       const role = target.attributes.href.nodeValue.replaceAll('#', '');
 
       //데이터 교체
-      jsonData().then((item) => {
-        item.map((jsonItem) => {
+      jsonData().then((jsonItems) => {
+        jsonItems.map((jsonItem) => {
           if (role.toUpperCase() === jsonItem.role.toUpperCase()) {
             // role 변경
             crewRole.innerText = jsonItem.role;
